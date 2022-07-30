@@ -18,7 +18,7 @@
     <header class="page-header">
       <div class="container page-header-container">
         <nav class="page-nav">
-          <a class="logo link" href="./index.html"><span class="active">Web</span>Studio </a>
+          <a class="logo link" href="./index.html"><span class="blue">Web</span>Studio </a>
           <ul class="menu list">
             <li class="menu-list">
               <a class="menu-item active link" href="./index.html">Студия</a>
@@ -53,7 +53,7 @@
       <section class="section hero">
         <div class="hero-side container">
           <h1 class="main-title">Эффективные решения для вашего бизнеса</h1>
-          <button class="modal-btn" type="button">Заказать услугу</button>
+          <button class="modal-btn" type="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
       <section class="section">
@@ -116,28 +116,40 @@
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="work-progress list">
             <li>
-              <img
+              <div class="work-progress-item">
+                <img
                 src="./images/work/laptopj.jpg"
                 alt="ноутбук"
                 width="370"
-                height="294"
-              />
+                height="294"/>
+                <p class="work-progress-text">
+                  Десктопні додатки
+                </p>
+              </div>
             </li>
             <li>
-              <img
+              <div class="work-progress-item">
+                <img
                 src="./images/work/tabletj.jpg"
                 alt="планшет"
                 width="370"
-                height="294"
-              />
+                height="294"/>
+                <p class="work-progress-text">
+                  Мобільні додатки
+                </p>
+              </div>
             </li>
             <li>
-              <img
+              <div class="work-progress-item">
+                <img
                 src="./images/work/laptop2j.jpg"
                 alt="ноутбук"
                 width="370"
-                height="294"
-              />
+                height="294"/>
+                <p class="work-progress-text">
+                Дизайнерські рішення
+                </p>
+              </div>
             </li>
           </ul>
         </div>
@@ -363,7 +375,7 @@
     <footer class="footer ">
       <div class="container footer-address-social">
         <div>
-        <a class="logo-footer link" href="./index.html"><span class="active">Web</span>Studio </a>
+        <a class="logo-footer link" href="./index.html"><span class="blue">Web</span>Studio </a>
         <address class="address">
           <div class="footer-contact">
             <ul class=" list">
@@ -422,5 +434,15 @@
       </div>
     </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-close-btn" type="button" data-modal-close>
+          <svg class="modal-close-btn-icon" width="11" height="11">
+            <use href="./images/symbol-defs.svg#icon-close-modal"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
