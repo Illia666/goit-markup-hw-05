@@ -123,6 +123,7 @@ body {
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
+  color: var(--primary-text-color);
 }
 
 .menu-list:not(:last-child) {
@@ -140,7 +141,7 @@ body {
   color: var(--title-color);
   padding-top: 32px;
   padding-bottom: 32px;
-  transition: var(--transition-dur-and-func);
+  transition: color var(--transition-dur-and-func);
 }
 
 .mail-link {
@@ -154,7 +155,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--text-color);
   fill: var(--icon-color);
-  transition: var(--transition-dur-and-func);
+  transition: color var(--transition-dur-and-func), fill var(--transition-dur-and-func);
 }
 
 .nav-contacts-icon {
@@ -177,7 +178,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--text-color);
   fill: var(--icon-color);
-  transition: var(--transition-dur-and-func);
+  transition: color var(--transition-dur-and-func), fill var(--transition-dur-and-func);
 }
 
 .menu-item.active,
@@ -383,7 +384,7 @@ body {
   align-items: center;
   justify-content: center;
   fill: var(--icon-color);
-  transition: var(--transition-dur-and-func);
+  transition: background-color var(--transition-dur-and-func), fill var(--transition-dur-and-func);
 }
 
 .team-social-link:hover,
@@ -418,7 +419,7 @@ body {
   align-content: center;
   justify-content: center;
   fill: var(--icon-color);
-  transition: var(--transition-dur-and-func);
+  transition: fill var(--transition-dur-and-func);
 }
 
 .clients-link:hover,
@@ -449,7 +450,7 @@ body {
 .mail-link-footer,
 .phone-number-footer {
   color: rgba(255, 255, 255, 0.6);
-  transition: var(--transition-dur-and-func);
+  transition: color var(--transition-dur-and-func);
 }
 
 .logo-footer {
@@ -519,7 +520,7 @@ body {
   align-content: center;
   justify-content: center;
   fill: var(--text-primary-color);
-  transition: var(--transition-dur-and-func);
+  transition: background-color var(--transition-dur-and-func), fill var(--transition-dur-and-func);
 }
 
 .social-item-logo {
@@ -529,7 +530,7 @@ body {
 
 .social-link:hover,
 .social-link:focus {
-  background: var(--active-color);
+  background-color: var(--active-color);
 }
 
 /*=========================projects =========================  */
@@ -618,7 +619,7 @@ body {
   padding-left: 24px;
   padding-right: 24px;
   transform: translate(0, 100%);
-  transition: var(--transition-dur-and-func);
+  transition: transform var(--transition-dur-and-func);
 }
 
 .product-link {
@@ -652,7 +653,7 @@ body {
   color: var(--text-primary-color);
   background-color: var(--active-color);
   cursor: pointer;
-  transition: var(--transition-dur-and-func);
+  transition: color var(--transition-dur-and-func), background-color var(--transition-dur-and-func);
 }
 
 .modal-btn:hover,
@@ -684,7 +685,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer; 
-   transition: var(--transition-dur-and-func);
+   transition: background-color var(--transition-dur-and-func);
 
 }
 
@@ -734,7 +735,7 @@ pointer-events: none;
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0;
-  transition: border-color var(--transition-dur-and-func);
+  transition: border-color var(--transition-dur-and-func), fill var(--transition-dur-and-func);
 }
 
 .modal-close-btn:hover,
