@@ -419,7 +419,7 @@ body {
   align-content: center;
   justify-content: center;
   fill: var(--icon-color);
-  transition: fill var(--transition-dur-and-func);
+  transition: fill var(--transition-dur-and-func), border var(--transition-dur-and-func);
 }
 
 .clients-link:hover,
@@ -624,7 +624,7 @@ body {
 
 .product-link {
   display: block;
-  transition: var(--transition-dur-and-func);
+  transition: box-shadow var(--transition-dur-and-func);
 }
 
 .product-list-img {
@@ -685,7 +685,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer; 
-   transition: background-color var(--transition-dur-and-func);
+   transition: background-color var(--transition-dur-and-func), box-shadow var(--transition-dur-and-func), color var(--transition-dur-and-func);
 
 }
 
